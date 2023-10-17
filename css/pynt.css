@@ -1,0 +1,123 @@
+body{
+    /*background-image: linear-gradient(120deg, rgb(50, 50, 241), gray); */
+    background-image: linear-gradient(120deg, rgb(5, 5, 158), rgb(3, 1, 29));
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    font-family: Blippo, fantasy;
+
+}
+
+.kalkulator-hel{
+    display:flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    /*font-weight: bold;*/
+    
+}
+
+.input-gruppe{
+    background-image: linear-gradient(45deg, rgb(1, 1, 102), rgb(103, 109, 134), rgb(22, 30, 37));
+    width: auto;
+    display: flex;
+    justify-content: center;
+    border-radius: 5px 40px 5px 40px;
+    font-size: 22px;
+
+}
+
+.input-liste{
+    padding: 10px 40px 10px 10px;
+
+}
+
+.input-overskrift{
+    display:flex;
+    justify-content: space-around;
+    padding-top: 10px;
+
+}
+
+.input-felt{
+    padding-bottom: 5px;
+    border: 1px solid black;
+    width:auto;
+
+}
+
+.resultat-boks{
+    background-color: rgb(255, 255, 255);
+    margin: 40px 20px 200px 40px;
+    border: 5px solid  rgb(60, 68, 117);
+    width:auto;
+    height: auto;
+
+}
+
+.knapper{
+    display: flex;
+
+}
+
+.knapp{
+    font-family: Blippo, fantasy;
+    font-size: 120%;
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 5px 20px 2px 20px;
+    padding: 5px;
+    margin: 10px 10px 0px 10px;
+    height:50px;
+    width:200px;
+    color: white;
+   
+}
+
+.knapp:hover {
+    color: rgb(255, 255, 255);
+
+}
+
+.knapp:active {
+    background-color: #3e8e41;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+}
+
+.resultat-overskrift{
+    background-image: linear-gradient(120deg, rgb(50, 50, 241), gray);
+    margin-top: 0px;
+    text-align: center;
+    color: white;
+
+}
+
+#regn-ut{
+    background-color: rgb(54, 170, 60);   
+
+}
+
+#slett-alle{
+    background-color: rgb(185, 44, 44);   
+
+}
+
+.resultat-tekst{
+    flex-wrap: wrap;
+    padding: 20px 20px 20px 20px;
+    text-align: center;
+    font-weight: bold;
+
+}
+
+footer{
+    background-image: linear-gradient(45deg,rgb(2, 2, 87), rgb(3, 1, 29),rgb(1, 1, 82));
+    color:white;
+    width:100%;
+    text-align: center;
+    border-radius: 5px 40px 5px 40px;
+    font-family: Arial, Helvetica, sans-serif;
+}
