@@ -1,399 +1,1119 @@
 <html>
 
-    <head>
-        <title>Kalkulator</title>
-        <link rel="stylesheet" href="../css/pynt.css">
-        <link rel="icon" href="../bilder/icon.png">
+<head>
+    <title>Kalkulator</title>
+    <link rel="stylesheet" href="../css/pynt.css">
+    <link rel="icon" href="../bilder/icon.png">
 
     <!--slutt head-->
-    </head> 
+</head>
 
-    <body>
-        <div class="kalkulator-hel">
-            <header>
-                <h1>Studiepoeng & Karakter kalkulering</h1>
+<body>
+    <div class="kalkulator-hel">
+        <header>
+            <h1>Studiepoeng & Karakter kalkulering</h1>
 
             <!--slutt header-->
-            </header>
+        </header>
 
-            <div class="input-gruppe">
-                <div class="input-liste">
-                    <div class="input-overskrift">
-                        <p class="overskrift_bokstavkarakterer">Bokstavkarakterer</p>
-                        <p class="overskrift_studiepoeng">Studiepoeng</p>
-                    <!--slutt input-overskrift-->    
-                    </div>
-                    <ol>
-                        <li>
-                            <select id="karakter_0" class="input-felt" type="">
-                                <option value="-" selected="selected"><em>...Velg bokstavkarakter...</em></option>
-                                <option value="A">A</option>
-                                <option value="B">B</option>
-                                <option value="C">C</option>
-                                <option value="D">D</option>
-                                <option value="E">E</option>                                 
-                            </select>
-                            <input id="studiepoeng_0" class="input-felt" type="number">
-                        </li>
-                        <li>
-                            <select id="karakter_1" class="input-felt" type="">
-                                <option value="-" selected="selected"><em>...Velg bokstavkarakter...</em></option>
-                                <option value="A">A</option>
-                                <option value="B">B</option>
-                                <option value="C">C</option>
-                                <option value="D">D</option>
-                                <option value="E">E</option>                                 
-                            </select>
-                            <input id="studiepoeng_1" class="input-felt" type="number">
-                        </li>
-                        <li>
-                            <select id="karakter_2" class="input-felt" type="">
-                                <option value="-" selected="selected"><em>...Velg bokstavkarakter...</em></option>
-                                <option value="A">A</option>
-                                <option value="B">B</option>
-                                <option value="C">C</option>
-                                <option value="D">D</option>
-                                <option value="E">E</option>                                 
-                            </select>
-                            <input id="studiepoeng_2" class="input-felt" type="number">
-                        </li>
-                        <li>
-                            <select id="karakter_3" class="input-felt" type="">
-                                <option value="-" selected="selected"><em>...Velg bokstavkarakter...</em></option>
-                                <option value="A">A</option>
-                                <option value="B">B</option>
-                                <option value="C">C</option>
-                                <option value="D">D</option>
-                                <option value="E">E</option>                                 
-                            </select>
-                            <input id="studiepoeng_3" class="input-felt" type="number">
-                        </li>
-                        <li>
-                            <select id="karakter_4" class="input-felt" type="">
-                                <option value="-" selected="selected"><em>...Velg bokstavkarakter...</em></option>
-                                <option value="A">A</option>
-                                <option value="B">B</option>
-                                <option value="C">C</option>
-                                <option value="D">D</option>
-                                <option value="E">E</option>                                 
-                            </select>
-                            <input id="studiepoeng_4" class="input-felt" type="number">
-                        </li>
-                        <li>
-                            <select id="karakter_5" class="input-felt" type="">
-                                <option value="-" selected="selected"><em>...Velg bokstavkarakter...</em></option>
-                                <option value="A">A</option>
-                                <option value="B">B</option>
-                                <option value="C">C</option>
-                                <option value="D">D</option>
-                                <option value="E">E</option>                                 
-                            </select>
-                            <input id="studiepoeng_5" class="input-felt" type="number">
-                        </li>
-                        <li>
-                            <select id="karakter_6" class="input-felt" type="">
-                                <option value="-" selected="selected"><em>...Velg bokstavkarakter...</em></option>
-                                <option value="A">A</option>
-                                <option value="B">B</option>
-                                <option value="C">C</option>
-                                <option value="D">D</option>
-                                <option value="E">E</option>                                 
-                            </select>
-                            <input id="studiepoeng_6" class="input-felt" type="number">
-                        </li>
-                        <li>
-                            <select id="karakter_7" class="input-felt" type="">
-                                <option value="-" selected="selected"><em>...Velg bokstavkarakter...</em></option>
-                                <option value="A">A</option>
-                                <option value="B">B</option>
-                                <option value="C">C</option>
-                                <option value="D">D</option>
-                                <option value="E">E</option> 
-                            </select>
-                            <input id="studiepoeng_7" class="input-felt" type="number">
-                        </li>
-                        <li>
-                            <select id="karakter_8" class="input-felt" type="">
-                                <option value="-" selected="selected"><em>...Velg bokstavkarakter...</em></option>
-                                <option value="A">A</option>
-                                <option value="B">B</option>
-                                <option value="C">C</option>
-                                <option value="D">D</option>
-                                <option value="E">E</option>                                 
-                            </select>
-                            <input id="studiepoeng_8" class="input-felt" type="number">
-                        </li>
-                        <li>
-                            <select id="karakter_9" class="input-felt" type="">
-                                <option value="-" selected="selected"><em>...Velg bokstavkarakter...</em></option>
-                                <option value="A">A</option>
-                                <option value="B">B</option>
-                                <option value="C">C</option>
-                                <option value="D">D</option>
-                                <option value="E">E</option>                                 
-                            </select>
-                            <input id="studiepoeng_9" class="input-felt" type="number">
-                        </li>
-                        <li>
-                            <select id="karakter_10" class="input-felt" type="">
-                                <option value="-" selected="selected"><em>...Velg bokstavkarakter...</em></option>
-                                <option value="A">A</option>
-                                <option value="B">B</option>
-                                <option value="C">C</option>
-                                <option value="D">D</option>
-                                <option value="E">E</option>                                 
-                            </select>
-                            <input id="studiepoeng_10" class="input-felt" type="number">
-                        </li>
-                        <li>
-                            <select id="karakter_11" class="input-felt" type="">
-                                <option value="-" selected="selected"><em>...Velg bokstavkarakter...</em></option>
-                                <option value="A">A</option>
-                                <option value="B">B</option>
-                                <option value="C">C</option>
-                                <option value="D">D</option>
-                                <option value="E">E</option>                                 
-                            </select>
-                            <input id="studiepoeng_11" class="input-felt" type="number">
-                        </li>
-                        <li>
-                            <select id="karakter_12" class="input-felt" type="">
-                                <option value="-" selected="selected"><em>...Velg bokstavkarakter...</em></option>
-                                <option value="A">A</option>
-                                <option value="B">B</option>
-                                <option value="C">C</option>
-                                <option value="D">D</option>
-                                <option value="E">E</option>                                 
-                            </select>
-                            <input id="studiepoeng_12" class="input-felt" type="number">
-                        </li>
-                        <li>
-                            <select id="karakter_13" class="input-felt" type="">
-                                <option value="-" selected="selected"><em>...Velg bokstavkarakter...</em></option>
-                                <option value="A">A</option>
-                                <option value="B">B</option>
-                                <option value="C">C</option>
-                                <option value="D">D</option>
-                                <option value="E">E</option>                                 
-                            </select>
-                            <input id="studiepoeng_13" class="input-felt" type="number">
-                        </li>
-                        <li>
-                            <select id="karakter_14" class="input-felt" type="">
-                                <option value="-" selected="selected"><em>...Velg bokstavkarakter...</em></option>
-                                <option value="A">A</option>
-                                <option value="B">B</option>
-                                <option value="C">C</option>
-                                <option value="D">D</option>
-                                <option value="E">E</option> 
-                            </select>
-                            <input id="studiepoeng_14" class="input-felt" type="number">
-                        </li>
-                        <li>
-                            <select id="karakter_15" class="input-felt" type="">
-                                <option value="-" selected="selected"><em>...Velg bokstavkarakter...</em></option>
-                                <option value="A">A</option>
-                                <option value="B">B</option>
-                                <option value="C">C</option>
-                                <option value="D">D</option>
-                                <option value="E">E</option>                                 
-                            </select>
-                            <input id="studiepoeng_15" class="input-felt" type="number">
-                        </li>
-                        <li>
-                            <select id="karakter_16" class="input-felt" type="">
-                                <option value="-" selected="selected"><em>...Velg bokstavkarakter...</em></option>
-                                <option value="A">A</option>
-                                <option value="B">B</option>
-                                <option value="C">C</option>
-                                <option value="D">D</option>
-                                <option value="E">E</option>                                 
-                            </select>
-                            <input id="studiepoeng_16" class="input-felt" type="number">
-                        </li>
-                        <li>
-                            <select id="karakter_17" class="input-felt" type="">
-                                <option value="-" selected="selected"><em>...Velg bokstavkarakter...</em></option>
-                                <option value="A">A</option>
-                                <option value="B">B</option>
-                                <option value="C">C</option>
-                                <option value="D">D</option>
-                                <option value="E">E</option> 
-                            </select>
-                            <input id="studiepoeng_17" class="input-felt" type="number">
-                        </li>
-                        <li>
-                            <select id="karakter_18" class="input-felt" type="">
-                                <option value="-" selected="selected"><em>...Velg bokstavkarakter...</em></option>
-                                <option value="A">A</option>
-                                <option value="B">B</option>
-                                <option value="C">C</option>
-                                <option value="D">D</option>
-                                <option value="E">E</option>                                 
-                            </select>
-                            <input id="studiepoeng_18" class="input-felt" type="number">
-                        </li>
-                        <li>
-                            <select id="karakter_19" class="input-felt" type="">
-                                <option value="-" selected="selected"><em>...Velg bokstavkarakter...</em></option>
-                                <option value="A">A</option>
-                                <option value="B">B</option>
-                                <option value="C">C</option>
-                                <option value="D">D</option>
-                                <option value="E">E</option>                                 
-                            </select>
-                            <input id="studiepoeng_19" class="input-felt" type="number">
-                        </li>
-                        <li>
-                            <select id="karakter_20" class="input-felt" type="">
-                                <option value="-" selected="selected"><em>...Velg bokstavkarakter...</em></option>
-                                <option value="A">A</option>
-                                <option value="B">B</option>
-                                <option value="C">C</option>
-                                <option value="D">D</option>
-                                <option value="E">E</option>                                 
-                            </select>
-                            <input id="studiepoeng_20" class="input-felt" type="number">
-                        </li>
-                        <li>
-                            <select id="karakter_21" class="input-felt" type="">
-                                <option value="-" selected="selected"><em>...Velg bokstavkarakter...</em></option>
-                                <option value="A">A</option>
-                                <option value="B">B</option>
-                                <option value="C">C</option>
-                                <option value="D">D</option>
-                                <option value="E">E</option>                                 
-                            </select>
-                            <input id="studiepoeng_21" class="input-felt" type="number">
-                        </li>
-                        <li>
-                            <select id="karakter_22" class="input-felt" type="">
-                                <option value="-" selected="selected"><em>...Velg bokstavkarakter...</em></option>
-                                <option value="A">A</option>
-                                <option value="B">B</option>
-                                <option value="C">C</option>
-                                <option value="D">D</option>
-                                <option value="E">E</option>                                 
-                            </select>
-                            <input id="studiepoeng_22" class="input-felt" type="number">
-                        </li>
-                        <li>
-                            <select id="karakter_23" class="input-felt" type="">
-                                <option value="-" selected="selected"><em>...Velg bokstavkarakter...</em></option>
-                                <option value="A">A</option>
-                                <option value="B">B</option>
-                                <option value="C">C</option>
-                                <option value="D">D</option>
-                                <option value="E">E</option>                                 
-                            </select>
-                            <input id="studiepoeng_23" class="input-felt" type="number">
-                        </li>
-                        <li>
-                            <select id="karakter_24" class="input-felt" type="">
-                                <option value="-" selected="selected"><em>...Velg bokstavkarakter...</em></option>
-                                <option value="A">A</option>
-                                <option value="B">B</option>
-                                <option value="C">C</option>
-                                <option value="D">D</option>
-                                <option value="E">E</option>                                 
-                            </select>
-                            <input id="studiepoeng_24" class="input-felt" type="number">
-                        </li>
-                        <li>
-                            <select id="karakter_25" class="input-felt" type="">
-                                <option value="-" selected="selected"><em>...Velg bokstavkarakter...</em></option>
-                                <option value="A">A</option>
-                                <option value="B">B</option>
-                                <option value="C">C</option>
-                                <option value="D">D</option>
-                                <option value="E">E</option>                                 
-                            </select>
-                            <input id="studiepoeng_25" class="input-felt" type="number">
-                        </li>
-                        <li>
-                            <select id="karakter_26" class="input-felt" type="">
-                                <option value="-" selected="selected"><em>...Velg bokstavkarakter...</em></option>
-                                <option value="A">A</option>
-                                <option value="B">B</option>
-                                <option value="C">C</option>
-                                <option value="D">D</option>
-                                <option value="E">E</option>                                 
-                            </select>
-                            <input id="studiepoeng_26" class="input-felt" type="number">
-                        </li>
-                        <li>
-                            <select id="karakter_27" class="input-felt" type="">
-                                <option value="-" selected="selected"><em>...Velg bokstavkarakter...</em></option>
-                                <option value="A">A</option>
-                                <option value="B">B</option>
-                                <option value="C">C</option>
-                                <option value="D">D</option>
-                                <option value="E">E</option>                                 
-                            </select>
-                            <input id="studiepoeng_27" class="input-felt" type="number">
-                        </li>
-                        <li>
-                            <select id="karakter_28" class="input-felt" type="">
-                                <option value="-" selected="selected"><em>...Velg bokstavkarakter...</em></option>
-                                <option value="A">A</option>
-                                <option value="B">B</option>
-                                <option value="C">C</option>
-                                <option value="D">D</option>
-                                <option value="E">E</option>                                 
-                            </select>
-                            <input id="studiepoeng_28" class="input-felt" type="number">
-                        </li>
-                        <li>
-                            <select id="karakter_29" class="input-felt" type="">
-                                <option value="-" selected="selected"><em>...Velg bokstavkarakter...</em></option>
-                                <option value="A">A</option>
-                                <option value="B">B</option>
-                                <option value="C">C</option>
-                                <option value="D">D</option>
-                                <option value="E">E</option>                                 
-                            </select>
-                            <input id="studiepoeng_29" class="input-felt" type="number">
-                        </li>
-                        
-                    </ol>
-                <!--slutt input-liste-->
+        <div class="input-gruppe">
+            <div class="input-liste">
+                <div class="input-overskrift">
+                    <p class="overskrift_bokstavkarakterer">Karakterertyper:</p>
+                    <p class="overskrift_studiepoeng">Studiepoeng</p>
+                    <!--slutt input-overskrift-->
                 </div>
-            <!--slutt input-gruppe-->    
+                <ol>
+                    <li>
+                        <select id="karakter_0" class="input-felt" type="">
+                                <option value="-" selected="selected"><em>Bokstaver</em></option>
+                                <option value="A">A</option>
+                                <option value="B">B</option>
+                                <option value="C">C</option>
+                                <option value="D">D</option>
+                                <option value="E">E</option>                                 
+                            </select>
+                        <select id="karakter_0_1" class="input-felt" type="">
+                                <option value="-" selected="selected"><em>Desimal</em></option>
+                                <option value="A">1,0-2,2</option>
+                                <option value="B">2,3-2,5</option>
+                                <option value="C">2,6-2,7</option>
+                                <option value="D">2,8-3,0</option>
+                                <option value="E">3,1-4,0</option>                                 
+                            </select>
+                        <select id="karakter_0_1_0" class="input-felt" type="">
+                                <option value="-" selected="selected"><em>Oldschool</em></option>
+                                <option value="A">S</option>
+                                <option value="B">M</option>
+                                <option value="C">G</option>
+                                <option value="D">Ng</option>
+                                <option value="E">Lg</option>                                 
+                            </select>
+                        <select id="karakter_2_0" class="input-felt" type="">
+                                <option value="-" selected="selected"><em>tall</em></option>
+                                <option value="A">6</option>
+                                <option value="B">5</option>
+                                <option value="C">4</option>
+                                <option value="D">3</option>
+                                <option value="E">2</option>                                 
+                            </select>
+                        <input id="studiepoeng_0" class="input-felt" type="number">
+                    </li>
+                    <li>
+                        <select id="karakter_1" class="input-felt" type="">
+                                <option value="-" selected="selected"><em>Bokstaver</em></option>
+                                <option value="A">A</option>
+                                <option value="B">B</option>
+                                <option value="C">C</option>
+                                <option value="D">D</option>
+                                <option value="E">E</option>                                 
+                            </select>
+                        <select id="karakter_0_2" class="input-felt" type="">
+                                <option value="-" selected="selected"><em>Desimal</em></option>
+                                <option value="A">1,0-2,2</option>
+                                <option value="B">2,3-2,5</option>
+                                <option value="C">2,6-2,7</option>
+                                <option value="D">2,8-3,0</option>
+                                <option value="E">3,1-4,0</option>                                 
+                            </select>
+                        <select id="karakter_0_1_1" class="input-felt" type="">
+                                <option value="-" selected="selected"><em>Oldschool</em></option>
+                                <option value="A">S</option>
+                                <option value="B">M</option>
+                                <option value="C">G</option>
+                                <option value="D">Ng</option>
+                                <option value="E">Lg</option>                                 
+                            </select>
+                        <select id="karakter_2_1" class="input-felt" type="">
+                                <option value="-" selected="selected"><em>tall</em></option>
+                                <option value="A">6</option>
+                                <option value="B">5</option>
+                                <option value="C">4</option>
+                                <option value="D">3</option>
+                                <option value="E">2</option>                                 
+                            </select>
+                        <input id="studiepoeng_1" class="input-felt" type="number">
+                    </li>
+                    <li>
+                        <select id="karakter_2" class="input-felt" type="">
+                                <option value="-" selected="selected"><em>Bokstaver</em></option>
+                                <option value="A">A</option>
+                                <option value="B">B</option>
+                                <option value="C">C</option>
+                                <option value="D">D</option>
+                                <option value="E">E</option>                                 
+                            </select>
+                        <select id="karakter_0_2" class="input-felt" type="">
+                                <option value="-" selected="selected"><em>Desimal</em></option>
+                                <option value="A">1,0-2,2</option>
+                                <option value="B">2,3-2,5</option>
+                                <option value="C">2,6-2,7</option>
+                                <option value="D">2,8-3,0</option>
+                                <option value="E">3,1-4,0</option>                                 
+                            </select>
+                        <select id="karakter_0_1_2" class="input-felt" type="">
+                                <option value="-" selected="selected"><em>Oldschool</em></option>
+                                <option value="A">S</option>
+                                <option value="B">M</option>
+                                <option value="C">G</option>
+                                <option value="D">Ng</option>
+                                <option value="E">Lg</option>                                 
+                            </select>
+                        <select id="karakter_2_2" class="input-felt" type="">
+                                <option value="-" selected="selected"><em>tall</em></option>
+                                <option value="A">6</option>
+                                <option value="B">5</option>
+                                <option value="C">4</option>
+                                <option value="D">3</option>
+                                <option value="E">2</option>                                 
+                            </select>
+                        <input id="studiepoeng_2" class="input-felt" type="number">
+                    </li>
+                    <li>
+                        <select id="karakter_3" class="input-felt" type="">
+                                <option value="-" selected="selected"><em>Bokstaver</em></option>
+                                <option value="A">A</option>
+                                <option value="B">B</option>
+                                <option value="C">C</option>
+                                <option value="D">D</option>
+                                <option value="E">E</option>                                 
+                            </select>
+                        <select id="karakter_0_3" class="input-felt" type="">
+                                <option value="-" selected="selected"><em>Desimal</em></option>
+                                <option value="A">1,0-2,2</option>
+                                <option value="B">2,3-2,5</option>
+                                <option value="C">2,6-2,7</option>
+                                <option value="D">2,8-3,0</option>
+                                <option value="E">3,1-4,0</option>                                 
+                            </select>
+                        <select id="karakter_0_1_3" class="input-felt" type="">
+                                <option value="-" selected="selected"><em>Oldschool</em></option>
+                                <option value="A">S</option>
+                                <option value="B">M</option>
+                                <option value="C">G</option>
+                                <option value="D">Ng</option>
+                                <option value="E">Lg</option>                                 
+                            </select>
+                        <select id="karakter_2_3" class="input-felt" type="">
+                                <option value="-" selected="selected"><em>tall</em></option>
+                                <option value="A">6</option>
+                                <option value="B">5</option>
+                                <option value="C">4</option>
+                                <option value="D">3</option>
+                                <option value="E">2</option>                                 
+                            </select>
+                        <input id="studiepoeng_3" class="input-felt" type="number">
+                    </li>
+                    <li>
+                        <select id="karakter_4" class="input-felt" type="">
+                                <option value="-" selected="selected"><em>Bokstaver</em></option>
+                                <option value="A">A</option>
+                                <option value="B">B</option>
+                                <option value="C">C</option>
+                                <option value="D">D</option>
+                                <option value="E">E</option>                                 
+                            </select>
+                        <select id="karakter_0_4" class="input-felt" type="">
+                                <option value="-" selected="selected"><em>Desimal</em></option>
+                                <option value="A">1,0-2,2</option>
+                                <option value="B">2,3-2,5</option>
+                                <option value="C">2,6-2,7</option>
+                                <option value="D">2,8-3,0</option>
+                                <option value="E">3,1-4,0</option>                                 
+                            </select>
+                        <select id="karakter_0_1_4" class="input-felt" type="">
+                                <option value="-" selected="selected"><em>Oldschool</em></option>
+                                <option value="A">S</option>
+                                <option value="B">M</option>
+                                <option value="C">G</option>
+                                <option value="D">Ng</option>
+                                <option value="E">Lg</option>                                 
+                            </select>
+                        <select id="karakter_2_4" class="input-felt" type="">
+                                <option value="-" selected="selected"><em>tall</em></option>
+                                <option value="A">6</option>
+                                <option value="B">5</option>
+                                <option value="C">4</option>
+                                <option value="D">3</option>
+                                <option value="E">2</option>                                 
+                            </select>
+                        <input id="studiepoeng_4" class="input-felt" type="number">
+                    </li>
+                    <li>
+                        <select id="karakter_5" class="input-felt" type="">
+                                <option value="-" selected="selected"><em>Bokstaver</em></option>
+                                <option value="A">A</option>
+                                <option value="B">B</option>
+                                <option value="C">C</option>
+                                <option value="D">D</option>
+                                <option value="E">E</option>                                 
+                            </select>
+                        <select id="karakter_0_5" class="input-felt" type="">
+                                <option value="-" selected="selected"><em>Desimal</em></option>
+                                <option value="A">1,0-2,2</option>
+                                <option value="B">2,3-2,5</option>
+                                <option value="C">2,6-2,7</option>
+                                <option value="D">2,8-3,0</option>
+                                <option value="E">3,1-4,0</option>                                 
+                            </select>
+                        <select id="karakter_0_1_5" class="input-felt" type="">
+                                <option value="-" selected="selected"><em>Oldschool</em></option>
+                                <option value="A">S</option>
+                                <option value="B">M</option>
+                                <option value="C">G</option>
+                                <option value="D">Ng</option>
+                                <option value="E">Lg</option>                                 
+                            </select>
+                        <select id="karakter_2_5" class="input-felt" type="">
+                                <option value="-" selected="selected"><em>tall</em></option>
+                                <option value="A">6</option>
+                                <option value="B">5</option>
+                                <option value="C">4</option>
+                                <option value="D">3</option>
+                                <option value="E">2</option>                                 
+                            </select>
+                        <input id="studiepoeng_5" class="input-felt" type="number">
+                    </li>
+                    <li>
+                        <select id="karakter_6" class="input-felt" type="">
+                                <option value="-" selected="selected"><em>Bokstaver</em></option>
+                                <option value="A">A</option>
+                                <option value="B">B</option>
+                                <option value="C">C</option>
+                                <option value="D">D</option>
+                                <option value="E">E</option>                                 
+                            </select>
+                        <select id="karakter_0_6" class="input-felt" type="">
+                                <option value="-" selected="selected"><em>Desimal</em></option>
+                                <option value="A">1,0-2,2</option>
+                                <option value="B">2,3-2,5</option>
+                                <option value="C">2,6-2,7</option>
+                                <option value="D">2,8-3,0</option>
+                                <option value="E">3,1-4,0</option>                                 
+                            </select>
+                        <select id="karakter_0_1_6" class="input-felt" type="">
+                                <option value="-" selected="selected"><em>Oldschool</em></option>
+                                <option value="A">S</option>
+                                <option value="B">M</option>
+                                <option value="C">G</option>
+                                <option value="D">Ng</option>
+                                <option value="E">Lg</option>                                 
+                            </select>
+                        <select id="karakter_2_6" class="input-felt" type="">
+                                <option value="-" selected="selected"><em>tall</em></option>
+                                <option value="A">6</option>
+                                <option value="B">5</option>
+                                <option value="C">4</option>
+                                <option value="D">3</option>
+                                <option value="E">2</option>                                 
+                            </select>
+                        <input id="studiepoeng_6" class="input-felt" type="number">
+                    </li>
+                    <li>
+                        <select id="karakter_7" class="input-felt" type="">
+                                <option value="-" selected="selected"><em>Bokstaver</em></option>
+                                <option value="A">A</option>
+                                <option value="B">B</option>
+                                <option value="C">C</option>
+                                <option value="D">D</option>
+                                <option value="E">E</option> 
+                            </select>
+                        <select id="karakter_0_7" class="input-felt" type="">
+                                <option value="-" selected="selected"><em>Desimal</em></option>
+                                <option value="A">1,0-2,2</option>
+                                <option value="B">2,3-2,5</option>
+                                <option value="C">2,6-2,7</option>
+                                <option value="D">2,8-3,0</option>
+                                <option value="E">3,1-4,0</option>                                 
+                            </select>
+                        <select id="karakter_0_1_7" class="input-felt" type="">
+                                <option value="-" selected="selected"><em>Oldschool</em></option>
+                                <option value="A">S</option>
+                                <option value="B">M</option>
+                                <option value="C">G</option>
+                                <option value="D">Ng</option>
+                                <option value="E">Lg</option>                                 
+                            </select>
+                        <select id="karakter_2_7" class="input-felt" type="">
+                                <option value="-" selected="selected"><em>tall</em></option>
+                                <option value="A">6</option>
+                                <option value="B">5</option>
+                                <option value="C">4</option>
+                                <option value="D">3</option>
+                                <option value="E">2</option>                                 
+                            </select>
+                        <input id="studiepoeng_7" class="input-felt" type="number">
+                    </li>
+                    <li>
+                        <select id="karakter_8" class="input-felt" type="">
+                                <option value="-" selected="selected"><em>Bokstaver</em></option>
+                                <option value="A">A</option>
+                                <option value="B">B</option>
+                                <option value="C">C</option>
+                                <option value="D">D</option>
+                                <option value="E">E</option>                                 
+                            </select>
+                        <select id="karakter_0_8" class="input-felt" type="">
+                                <option value="-" selected="selected"><em>Desimal</em></option>
+                                <option value="A">1,0-2,2</option>
+                                <option value="B">2,3-2,5</option>
+                                <option value="C">2,6-2,7</option>
+                                <option value="D">2,8-3,0</option>
+                                <option value="E">3,1-4,0</option>                                 
+                            </select>
+                        <select id="karakter_0_1_8" class="input-felt" type="">
+                                <option value="-" selected="selected"><em>Oldschool</em></option>
+                                <option value="A">S</option>
+                                <option value="B">M</option>
+                                <option value="C">G</option>
+                                <option value="D">Ng</option>
+                                <option value="E">Lg</option>                                 
+                            </select>
+                        <select id="karakter_2_8" class="input-felt" type="">
+                                <option value="-" selected="selected"><em>tall</em></option>
+                                <option value="A">6</option>
+                                <option value="B">5</option>
+                                <option value="C">4</option>
+                                <option value="D">3</option>
+                                <option value="E">2</option>                                 
+                            </select>
+                        <input id="studiepoeng_8" class="input-felt" type="number">
+                    </li>
+                    <li>
+                        <select id="karakter_9" class="input-felt" type="">
+                                <option value="-" selected="selected"><em>Bokstaver</em></option>
+                                <option value="A">A</option>
+                                <option value="B">B</option>
+                                <option value="C">C</option>
+                                <option value="D">D</option>
+                                <option value="E">E</option>                                 
+                            </select>
+                        <select id="karakter_0_9" class="input-felt" type="">
+                                <option value="-" selected="selected"><em>Desimal</em></option>
+                                <option value="A">1,0-2,2</option>
+                                <option value="B">2,3-2,5</option>
+                                <option value="C">2,6-2,7</option>
+                                <option value="D">2,8-3,0</option>
+                                <option value="E">3,1-4,0</option>                                 
+                            </select>
+                        <select id="karakter_0_1_9" class="input-felt" type="">
+                                <option value="-" selected="selected"><em>Oldschool</em></option>
+                                <option value="A">S</option>
+                                <option value="B">M</option>
+                                <option value="C">G</option>
+                                <option value="D">Ng</option>
+                                <option value="E">Lg</option>                                 
+                            </select>
+                        <select id="karakter_2_9" class="input-felt" type="">
+                                <option value="-" selected="selected"><em>tall</em></option>
+                                <option value="A">6</option>
+                                <option value="B">5</option>
+                                <option value="C">4</option>
+                                <option value="D">3</option>
+                                <option value="E">2</option>                                 
+                            </select>
+                        <input id="studiepoeng_9" class="input-felt" type="number">
+                    </li>
+                    <li>
+                        <select id="karakter_10" class="input-felt" type="">
+                                <option value="-" selected="selected"><em>Bokstaver</em></option>
+                                <option value="A">A</option>
+                                <option value="B">B</option>
+                                <option value="C">C</option>
+                                <option value="D">D</option>
+                                <option value="E">E</option>                                 
+                            </select>
+                        <select id="karakter_0_10" class="input-felt" type="">
+                                <option value="-" selected="selected"><em>Desimal</em></option>
+                                <option value="A">1,0-2,2</option>
+                                <option value="B">2,3-2,5</option>
+                                <option value="C">2,6-2,7</option>
+                                <option value="D">2,8-3,0</option>
+                                <option value="E">3,1-4,0</option>                                 
+                            </select>
+                        <select id="karakter_0_1_10" class="input-felt" type="">
+                                <option value="-" selected="selected"><em>Oldschool</em></option>
+                                <option value="A">S</option>
+                                <option value="B">M</option>
+                                <option value="C">G</option>
+                                <option value="D">Ng</option>
+                                <option value="E">Lg</option>                                 
+                            </select>
+                        <select id="karakter_2_10" class="input-felt" type="">
+                                <option value="-" selected="selected"><em>tall</em></option>
+                                <option value="A">6</option>
+                                <option value="B">5</option>
+                                <option value="C">4</option>
+                                <option value="D">3</option>
+                                <option value="E">2</option>                                 
+                            </select>
+                        <input id="studiepoeng_10" class="input-felt" type="number">
+                    </li>
+                    <li>
+                        <select id="karakter_11" class="input-felt" type="">
+                                <option value="-" selected="selected"><em>Bokstaver</em></option>
+                                <option value="A">A</option>
+                                <option value="B">B</option>
+                                <option value="C">C</option>
+                                <option value="D">D</option>
+                                <option value="E">E</option>                                 
+                            </select>
+                        <select id="karakter_0_11" class="input-felt" type="">
+                                <option value="-" selected="selected"><em>Desimal</em></option>
+                                <option value="A">1,0-2,2</option>
+                                <option value="B">2,3-2,5</option>
+                                <option value="C">2,6-2,7</option>
+                                <option value="D">2,8-3,0</option>
+                                <option value="E">3,1-4,0</option>                                 
+                            </select>
+                        <select id="karakter_0_1_11" class="input-felt" type="">
+                                <option value="-" selected="selected"><em>Oldschool</em></option>
+                                <option value="A">S</option>
+                                <option value="B">M</option>
+                                <option value="C">G</option>
+                                <option value="D">Ng</option>
+                                <option value="E">Lg</option>                                 
+                            </select>
+                        <select id="karakter_2_11" class="input-felt" type="">
+                                <option value="-" selected="selected"><em>tall</em></option>
+                                <option value="A">6</option>
+                                <option value="B">5</option>
+                                <option value="C">4</option>
+                                <option value="D">3</option>
+                                <option value="E">2</option>                                 
+                            </select>
+                        <input id="studiepoeng_11" class="input-felt" type="number">
+                    </li>
+                    <li>
+                        <select id="karakter_12" class="input-felt" type="">
+                                <option value="-" selected="selected"><em>Bokstaver</em></option>
+                                <option value="A">A</option>
+                                <option value="B">B</option>
+                                <option value="C">C</option>
+                                <option value="D">D</option>
+                                <option value="E">E</option>                                 
+                            </select>
+                        <select id="karakter_0_12" class="input-felt" type="">
+                                <option value="-" selected="selected"><em>Desimal</em></option>
+                                <option value="A">1,0-2,2</option>
+                                <option value="B">2,3-2,5</option>
+                                <option value="C">2,6-2,7</option>
+                                <option value="D">2,8-3,0</option>
+                                <option value="E">3,1-4,0</option>                                 
+                            </select>
+                        <select id="karakter_0_1_12" class="input-felt" type="">
+                                <option value="-" selected="selected"><em>Oldschool</em></option>
+                                <option value="A">S</option>
+                                <option value="B">M</option>
+                                <option value="C">G</option>
+                                <option value="D">Ng</option>
+                                <option value="E">Lg</option>                                 
+                            </select>
+                        <select id="karakter_2_12" class="input-felt" type="">
+                                <option value="-" selected="selected"><em>tall</em></option>
+                                <option value="A">6</option>
+                                <option value="B">5</option>
+                                <option value="C">4</option>
+                                <option value="D">3</option>
+                                <option value="E">2</option>                                 
+                            </select>
+                        <input id="studiepoeng_12" class="input-felt" type="number">
+                    </li>
+                    <li>
+                        <select id="karakter_13" class="input-felt" type="">
+                                <option value="-" selected="selected"><em>Bokstaver</em></option>
+                                <option value="A">A</option>
+                                <option value="B">B</option>
+                                <option value="C">C</option>
+                                <option value="D">D</option>
+                                <option value="E">E</option>                                 
+                            </select>
+                        <select id="karakter_0_13" class="input-felt" type="">
+                                <option value="-" selected="selected"><em>Desimal</em></option>
+                                <option value="A">1,0-2,2</option>
+                                <option value="B">2,3-2,5</option>
+                                <option value="C">2,6-2,7</option>
+                                <option value="D">2,8-3,0</option>
+                                <option value="E">3,1-4,0</option>                                 
+                            </select>
+                        <select id="karakter_0_1_13" class="input-felt" type="">
+                                <option value="-" selected="selected"><em>Oldschool</em></option>
+                                <option value="A">S</option>
+                                <option value="B">M</option>
+                                <option value="C">G</option>
+                                <option value="D">Ng</option>
+                                <option value="E">Lg</option>                                 
+                            </select>
+                        <select id="karakter_2_13" class="input-felt" type="">
+                                <option value="-" selected="selected"><em>tall</em></option>
+                                <option value="A">6</option>
+                                <option value="B">5</option>
+                                <option value="C">4</option>
+                                <option value="D">3</option>
+                                <option value="E">2</option>                                 
+                            </select>
+                        <input id="studiepoeng_13" class="input-felt" type="number">
+                    </li>
+                    <li>
+                        <select id="karakter_14" class="input-felt" type="">
+                                <option value="-" selected="selected"><em>Bokstaver</em></option>
+                                <option value="A">A</option>
+                                <option value="B">B</option>
+                                <option value="C">C</option>
+                                <option value="D">D</option>
+                                <option value="E">E</option> 
+                            </select>
+                        <select id="karakter_0_14" class="input-felt" type="">
+                                <option value="-" selected="selected"><em>Desimal</em></option>
+                                <option value="A">1,0-2,2</option>
+                                <option value="B">2,3-2,5</option>
+                                <option value="C">2,6-2,7</option>
+                                <option value="D">2,8-3,0</option>
+                                <option value="E">3,1-4,0</option>                                 
+                            </select>
+                        <select id="karakter_0_1_14" class="input-felt" type="">
+                                <option value="-" selected="selected"><em>Oldschool</em></option>
+                                <option value="A">S</option>
+                                <option value="B">M</option>
+                                <option value="C">G</option>
+                                <option value="D">Ng</option>
+                                <option value="E">Lg</option>                                 
+                            </select>
+                        <select id="karakter_2_14" class="input-felt" type="">
+                                <option value="-" selected="selected"><em>tall</em></option>
+                                <option value="A">6</option>
+                                <option value="B">5</option>
+                                <option value="C">4</option>
+                                <option value="D">3</option>
+                                <option value="E">2</option>                                 
+                            </select>
+                        <input id="studiepoeng_14" class="input-felt" type="number">
+                    </li>
+                    <li>
+                        <select id="karakter_15" class="input-felt" type="">
+                                <option value="-" selected="selected"><em>Bokstaver</em></option>
+                                <option value="A">A</option>
+                                <option value="B">B</option>
+                                <option value="C">C</option>
+                                <option value="D">D</option>
+                                <option value="E">E</option>                                 
+                            </select>
+                        <select id="karakter_0_15" class="input-felt" type="">
+                                <option value="-" selected="selected"><em>Desimal</em></option>
+                                <option value="A">1,0-2,2</option>
+                                <option value="B">2,3-2,5</option>
+                                <option value="C">2,6-2,7</option>
+                                <option value="D">2,8-3,0</option>
+                                <option value="E">3,1-4,0</option>                                 
+                            </select>
+                        <select id="karakter_0_1_15" class="input-felt" type="">
+                                <option value="-" selected="selected"><em>Oldschool</em></option>
+                                <option value="A">S</option>
+                                <option value="B">M</option>
+                                <option value="C">G</option>
+                                <option value="D">Ng</option>
+                                <option value="E">Lg</option>                                 
+                            </select>
+                        <select id="karakter_2_15" class="input-felt" type="">
+                                <option value="-" selected="selected"><em>tall</em></option>
+                                <option value="A">6</option>
+                                <option value="B">5</option>
+                                <option value="C">4</option>
+                                <option value="D">3</option>
+                                <option value="E">2</option>                                 
+                            </select>
+                        <input id="studiepoeng_15" class="input-felt" type="number">
+                    </li>
+                    <li>
+                        <select id="karakter_16" class="input-felt" type="">
+                                <option value="-" selected="selected"><em>Bokstaver</em></option>
+                                <option value="A">A</option>
+                                <option value="B">B</option>
+                                <option value="C">C</option>
+                                <option value="D">D</option>
+                                <option value="E">E</option>                                 
+                            </select>
+                        <select id="karakter_0_16" class="input-felt" type="">
+                                <option value="-" selected="selected"><em>Desimal</em></option>
+                                <option value="A">1,0-2,2</option>
+                                <option value="B">2,3-2,5</option>
+                                <option value="C">2,6-2,7</option>
+                                <option value="D">2,8-3,0</option>
+                                <option value="E">3,1-4,0</option>                                 
+                            </select>
+                        <select id="karakter_0_1_16" class="input-felt" type="">
+                                <option value="-" selected="selected"><em>Oldschool</em></option>
+                                <option value="A">S</option>
+                                <option value="B">M</option>
+                                <option value="C">G</option>
+                                <option value="D">Ng</option>
+                                <option value="E">Lg</option>                                 
+                            </select>
+                        <select id="karakter_2_16" class="input-felt" type="">
+                                <option value="-" selected="selected"><em>tall</em></option>
+                                <option value="A">6</option>
+                                <option value="B">5</option>
+                                <option value="C">4</option>
+                                <option value="D">3</option>
+                                <option value="E">2</option>                                 
+                            </select>
+                        <input id="studiepoeng_16" class="input-felt" type="number">
+                    </li>
+                    <li>
+                        <select id="karakter_17" class="input-felt" type="">
+                                <option value="-" selected="selected"><em>Bokstaver</em></option>
+                                <option value="A">A</option>
+                                <option value="B">B</option>
+                                <option value="C">C</option>
+                                <option value="D">D</option>
+                                <option value="E">E</option> 
+                            </select>
+                        <select id="karakter_0_17" class="input-felt" type="">
+                                <option value="-" selected="selected"><em>Desimal</em></option>
+                                <option value="A">1,0-2,2</option>
+                                <option value="B">2,3-2,5</option>
+                                <option value="C">2,6-2,7</option>
+                                <option value="D">2,8-3,0</option>
+                                <option value="E">3,1-4,0</option>                                 
+                            </select>
+                        <select id="karakter_0_1_17" class="input-felt" type="">
+                                <option value="-" selected="selected"><em>Oldschool</em></option>
+                                <option value="A">S</option>
+                                <option value="B">M</option>
+                                <option value="C">G</option>
+                                <option value="D">Ng</option>
+                                <option value="E">Lg</option>                                 
+                            </select>
+                        <select id="karakter_2_17" class="input-felt" type="">
+                                <option value="-" selected="selected"><em>tall</em></option>
+                                <option value="A">6</option>
+                                <option value="B">5</option>
+                                <option value="C">4</option>
+                                <option value="D">3</option>
+                                <option value="E">2</option>                                 
+                            </select>
+                        <input id="studiepoeng_17" class="input-felt" type="number">
+                    </li>
+                    <li>
+                        <select id="karakter_18" class="input-felt" type="">
+                                <option value="-" selected="selected"><em>Bokstaver</em></option>
+                                <option value="A">A</option>
+                                <option value="B">B</option>
+                                <option value="C">C</option>
+                                <option value="D">D</option>
+                                <option value="E">E</option>                                 
+                            </select>
+                        <select id="karakter_0_18" class="input-felt" type="">
+                                <option value="-" selected="selected"><em>Desimal</em></option>
+                                <option value="A">1,0-2,2</option>
+                                <option value="B">2,3-2,5</option>
+                                <option value="C">2,6-2,7</option>
+                                <option value="D">2,8-3,0</option>
+                                <option value="E">3,1-4,0</option>                                 
+                            </select>
+                        <select id="karakter_0_1_18" class="input-felt" type="">
+                                <option value="-" selected="selected"><em>Oldschool</em></option>
+                                <option value="A">S</option>
+                                <option value="B">M</option>
+                                <option value="C">G</option>
+                                <option value="D">Ng</option>
+                                <option value="E">Lg</option>                                 
+                            </select>
+                        <select id="karakter_2_18" class="input-felt" type="">
+                                <option value="-" selected="selected"><em>tall</em></option>
+                                <option value="A">6</option>
+                                <option value="B">5</option>
+                                <option value="C">4</option>
+                                <option value="D">3</option>
+                                <option value="E">2</option>                                 
+                            </select>
+                        <input id="studiepoeng_18" class="input-felt" type="number">
+                    </li>
+                    <li>
+                        <select id="karakter_19" class="input-felt" type="">
+                                <option value="-" selected="selected"><em>Bokstaver</em></option>
+                                <option value="A">A</option>
+                                <option value="B">B</option>
+                                <option value="C">C</option>
+                                <option value="D">D</option>
+                                <option value="E">E</option>                                 
+                            </select>
+                        <select id="karakter_0_19" class="input-felt" type="">
+                                <option value="-" selected="selected"><em>Desimal</em></option>
+                                <option value="A">1,0-2,2</option>
+                                <option value="B">2,3-2,5</option>
+                                <option value="C">2,6-2,7</option>
+                                <option value="D">2,8-3,0</option>
+                                <option value="E">3,1-4,0</option>                                 
+                            </select>
+                        <select id="karakter_0_1_19" class="input-felt" type="">
+                                <option value="-" selected="selected"><em>Oldschool</em></option>
+                                <option value="A">S</option>
+                                <option value="B">M</option>
+                                <option value="C">G</option>
+                                <option value="D">Ng</option>
+                                <option value="E">Lg</option>                                 
+                            </select>
+                        <select id="karakter_2_19" class="input-felt" type="">
+                                <option value="-" selected="selected"><em>tall</em></option>
+                                <option value="A">6</option>
+                                <option value="B">5</option>
+                                <option value="C">4</option>
+                                <option value="D">3</option>
+                                <option value="E">2</option>                                 
+                            </select>
+                        <input id="studiepoeng_19" class="input-felt" type="number">
+                    </li>
+                    <li>
+                        <select id="karakter_20" class="input-felt" type="">
+                                <option value="-" selected="selected"><em>Bokstaver</em></option>
+                                <option value="A">A</option>
+                                <option value="B">B</option>
+                                <option value="C">C</option>
+                                <option value="D">D</option>
+                                <option value="E">E</option>                                 
+                            </select>
+                        <select id="karakter_0_20" class="input-felt" type="">
+                                <option value="-" selected="selected"><em>Desimal</em></option>
+                                <option value="A">1,0-2,2</option>
+                                <option value="B">2,3-2,5</option>
+                                <option value="C">2,6-2,7</option>
+                                <option value="D">2,8-3,0</option>
+                                <option value="E">3,1-4,0</option>                                 
+                            </select>
+                        <select id="karakter_0_1_20" class="input-felt" type="">
+                                <option value="-" selected="selected"><em>Oldschool</em></option>
+                                <option value="A">S</option>
+                                <option value="B">M</option>
+                                <option value="C">G</option>
+                                <option value="D">Ng</option>
+                                <option value="E">Lg</option>                                 
+                            </select>
+                        <select id="karakter_2_20" class="input-felt" type="">
+                                <option value="-" selected="selected"><em>tall</em></option>
+                                <option value="A">6</option>
+                                <option value="B">5</option>
+                                <option value="C">4</option>
+                                <option value="D">3</option>
+                                <option value="E">2</option>                                 
+                            </select>
+                        <input id="studiepoeng_20" class="input-felt" type="number">
+                    </li>
+                    <li>
+                        <select id="karakter_21" class="input-felt" type="">
+                                <option value="-" selected="selected"><em>Bokstaver</em></option>
+                                <option value="A">A</option>
+                                <option value="B">B</option>
+                                <option value="C">C</option>
+                                <option value="D">D</option>
+                                <option value="E">E</option>                                 
+                            </select>
+                        <select id="karakter_0_21" class="input-felt" type="">
+                                <option value="-" selected="selected"><em>Desimal</em></option>
+                                <option value="A">1,0-2,2</option>
+                                <option value="B">2,3-2,5</option>
+                                <option value="C">2,6-2,7</option>
+                                <option value="D">2,8-3,0</option>
+                                <option value="E">3,1-4,0</option>                                 
+                            </select>
+                        <select id="karakter_0_1_21" class="input-felt" type="">
+                                <option value="-" selected="selected"><em>Oldschool</em></option>
+                                <option value="A">S</option>
+                                <option value="B">M</option>
+                                <option value="C">G</option>
+                                <option value="D">Ng</option>
+                                <option value="E">Lg</option>                                 
+                            </select>
+                        <select id="karakter_2_21" class="input-felt" type="">
+                                <option value="-" selected="selected"><em>tall</em></option>
+                                <option value="A">6</option>
+                                <option value="B">5</option>
+                                <option value="C">4</option>
+                                <option value="D">3</option>
+                                <option value="E">2</option>                                 
+                            </select>
+                        <input id="studiepoeng_21" class="input-felt" type="number">
+                    </li>
+                    <li>
+                        <select id="karakter_22" class="input-felt" type="">
+                                <option value="-" selected="selected"><em>Bokstaver</em></option>
+                                <option value="A">A</option>
+                                <option value="B">B</option>
+                                <option value="C">C</option>
+                                <option value="D">D</option>
+                                <option value="E">E</option>                                 
+                            </select>
+                        <select id="karakter_0_22" class="input-felt" type="">
+                                <option value="-" selected="selected"><em>Desimal</em></option>
+                                <option value="A">1,0-2,2</option>
+                                <option value="B">2,3-2,5</option>
+                                <option value="C">2,6-2,7</option>
+                                <option value="D">2,8-3,0</option>
+                                <option value="E">3,1-4,0</option>                                 
+                            </select>
+                        <select id="karakter_0_1_22" class="input-felt" type="">
+                                <option value="-" selected="selected"><em>Oldschool</em></option>
+                                <option value="A">S</option>
+                                <option value="B">M</option>
+                                <option value="C">G</option>
+                                <option value="D">Ng</option>
+                                <option value="E">Lg</option>                                 
+                            </select>
+                        <select id="karakter_2_22" class="input-felt" type="">
+                                <option value="-" selected="selected"><em>tall</em></option>
+                                <option value="A">6</option>
+                                <option value="B">5</option>
+                                <option value="C">4</option>
+                                <option value="D">3</option>
+                                <option value="E">2</option>                                 
+                            </select>
+                        <input id="studiepoeng_22" class="input-felt" type="number">
+                    </li>
+                    <li>
+                        <select id="karakter_23" class="input-felt" type="">
+                                <option value="-" selected="selected"><em>Bokstaver</em></option>
+                                <option value="A">A</option>
+                                <option value="B">B</option>
+                                <option value="C">C</option>
+                                <option value="D">D</option>
+                                <option value="E">E</option>                                 
+                            </select>
+                        <select id="karakter_0_23" class="input-felt" type="">
+                                <option value="-" selected="selected"><em>Desimal</em></option>
+                                <option value="A">1,0-2,2</option>
+                                <option value="B">2,3-2,5</option>
+                                <option value="C">2,6-2,7</option>
+                                <option value="D">2,8-3,0</option>
+                                <option value="E">3,1-4,0</option>                                 
+                            </select>
+                        <select id="karakter_0_1_23" class="input-felt" type="">
+                                <option value="-" selected="selected"><em>Oldschool</em></option>
+                                <option value="A">S</option>
+                                <option value="B">M</option>
+                                <option value="C">G</option>
+                                <option value="D">Ng</option>
+                                <option value="E">Lg</option>                                 
+                            </select>
+                        <select id="karakter_2_23" class="input-felt" type="">
+                                <option value="-" selected="selected"><em>tall</em></option>
+                                <option value="A">6</option>
+                                <option value="B">5</option>
+                                <option value="C">4</option>
+                                <option value="D">3</option>
+                                <option value="E">2</option>                                 
+                            </select>
+                        <input id="studiepoeng_23" class="input-felt" type="number">
+                    </li>
+                    <li>
+                        <select id="karakter_24" class="input-felt" type="">
+                                <option value="-" selected="selected"><em>Bokstaver</em></option>
+                                <option value="A">A</option>
+                                <option value="B">B</option>
+                                <option value="C">C</option>
+                                <option value="D">D</option>
+                                <option value="E">E</option>                                 
+                            </select>
+                        <select id="karakter_0_24" class="input-felt" type="">
+                                <option value="-" selected="selected"><em>Desimal</em></option>
+                                <option value="A">1,0-2,2</option>
+                                <option value="B">2,3-2,5</option>
+                                <option value="C">2,6-2,7</option>
+                                <option value="D">2,8-3,0</option>
+                                <option value="E">3,1-4,0</option>                                 
+                            </select>
+                        <select id="karakter_0_1_24" class="input-felt" type="">
+                                <option value="-" selected="selected"><em>Oldschool</em></option>
+                                <option value="A">S</option>
+                                <option value="B">M</option>
+                                <option value="C">G</option>
+                                <option value="D">Ng</option>
+                                <option value="E">Lg</option>                                 
+                            </select>
+                        <select id="karakter_2_24" class="input-felt" type="">
+                                <option value="-" selected="selected"><em>tall</em></option>
+                                <option value="A">6</option>
+                                <option value="B">5</option>
+                                <option value="C">4</option>
+                                <option value="D">3</option>
+                                <option value="E">2</option>                                 
+                            </select>
+                        <input id="studiepoeng_24" class="input-felt" type="number">
+                    </li>
+                    <li>
+                        <select id="karakter_25" class="input-felt" type="">
+                                <option value="-" selected="selected"><em>Bokstaver</em></option>
+                                <option value="A">A</option>
+                                <option value="B">B</option>
+                                <option value="C">C</option>
+                                <option value="D">D</option>
+                                <option value="E">E</option>                                 
+                            </select>
+                        <select id="karakter_0_25" class="input-felt" type="">
+                                <option value="-" selected="selected"><em>Desimal</em></option>
+                                <option value="A">1,0-2,2</option>
+                                <option value="B">2,3-2,5</option>
+                                <option value="C">2,6-2,7</option>
+                                <option value="D">2,8-3,0</option>
+                                <option value="E">3,1-4,0</option>                                 
+                            </select>
+                        <select id="karakter_0_1_25" class="input-felt" type="">
+                                <option value="-" selected="selected"><em>Oldschool</em></option>
+                                <option value="A">S</option>
+                                <option value="B">M</option>
+                                <option value="C">G</option>
+                                <option value="D">Ng</option>
+                                <option value="E">Lg</option>                                 
+                            </select>
+                        <select id="karakter_2_25" class="input-felt" type="">
+                                <option value="-" selected="selected"><em>tall</em></option>
+                                <option value="A">6</option>
+                                <option value="B">5</option>
+                                <option value="C">4</option>
+                                <option value="D">3</option>
+                                <option value="E">2</option>                                 
+                            </select>
+                        <input id="studiepoeng_25" class="input-felt" type="number">
+                    </li>
+                    <li>
+                        <select id="karakter_26" class="input-felt" type="">
+                                <option value="-" selected="selected"><em>Bokstaver</em></option>
+                                <option value="A">A</option>
+                                <option value="B">B</option>
+                                <option value="C">C</option>
+                                <option value="D">D</option>
+                                <option value="E">E</option>                                 
+                            </select>
+                        <select id="karakter_0_26" class="input-felt" type="">
+                                <option value="-" selected="selected"><em>Desimal</em></option>
+                                <option value="A">1,0-2,2</option>
+                                <option value="B">2,3-2,5</option>
+                                <option value="C">2,6-2,7</option>
+                                <option value="D">2,8-3,0</option>
+                                <option value="E">3,1-4,0</option>                                 
+                            </select>
+                        <select id="karakter_0_1_26" class="input-felt" type="">
+                                <option value="-" selected="selected"><em>Oldschool</em></option>
+                                <option value="A">S</option>
+                                <option value="B">M</option>
+                                <option value="C">G</option>
+                                <option value="D">Ng</option>
+                                <option value="E">Lg</option>                                 
+                            </select>
+                        <select id="karakter_2_26" class="input-felt" type="">
+                                <option value="-" selected="selected"><em>tall</em></option>
+                                <option value="A">6</option>
+                                <option value="B">5</option>
+                                <option value="C">4</option>
+                                <option value="D">3</option>
+                                <option value="E">2</option>                                 
+                            </select>
+                        <input id="studiepoeng_26" class="input-felt" type="number">
+                    </li>
+                    <li>
+                        <select id="karakter_27" class="input-felt" type="">
+                                <option value="-" selected="selected"><em>Bokstaver</em></option>
+                                <option value="A">A</option>
+                                <option value="B">B</option>
+                                <option value="C">C</option>
+                                <option value="D">D</option>
+                                <option value="E">E</option>                                 
+                            </select>
+                        <select id="karakter_0_27" class="input-felt" type="">
+                                <option value="-" selected="selected"><em>Desimal</em></option>
+                                <option value="A">1,0-2,2</option>
+                                <option value="B">2,3-2,5</option>
+                                <option value="C">2,6-2,7</option>
+                                <option value="D">2,8-3,0</option>
+                                <option value="E">3,1-4,0</option>                                 
+                            </select>
+                        <select id="karakter_0_1_27" class="input-felt" type="">
+                                <option value="-" selected="selected"><em>Oldschool</em></option>
+                                <option value="A">S</option>
+                                <option value="B">M</option>
+                                <option value="C">G</option>
+                                <option value="D">Ng</option>
+                                <option value="E">Lg</option>                                 
+                            </select>
+                        <select id="karakter_2_27" class="input-felt" type="">
+                                <option value="-" selected="selected"><em>tall</em></option>
+                                <option value="A">6</option>
+                                <option value="B">5</option>
+                                <option value="C">4</option>
+                                <option value="D">3</option>
+                                <option value="E">2</option>                                 
+                            </select>
+                        <input id="studiepoeng_27" class="input-felt" type="number">
+                    </li>
+                    <li>
+                        <select id="karakter_28" class="input-felt" type="">
+                                <option value="-" selected="selected"><em>Bokstaver</em></option>
+                                <option value="A">A</option>
+                                <option value="B">B</option>
+                                <option value="C">C</option>
+                                <option value="D">D</option>
+                                <option value="E">E</option>                                 
+                            </select>
+                        <select id="karakter_0_28" class="input-felt" type="">
+                                <option value="-" selected="selected"><em>Desimal</em></option>
+                                <option value="A">1,0-2,2</option>
+                                <option value="B">2,3-2,5</option>
+                                <option value="C">2,6-2,7</option>
+                                <option value="D">2,8-3,0</option>
+                                <option value="E">3,1-4,0</option>                                 
+                            </select>
+                        <select id="karakter_0_1_28" class="input-felt" type="">
+                                <option value="-" selected="selected"><em>Oldschool</em></option>
+                                <option value="A">S</option>
+                                <option value="B">M</option>
+                                <option value="C">G</option>
+                                <option value="D">Ng</option>
+                                <option value="E">Lg</option>                                 
+                            </select>
+                        <select id="karakter_2_28" class="input-felt" type="">
+                                <option value="-" selected="selected"><em>tall</em></option>
+                                <option value="A">6</option>
+                                <option value="B">5</option>
+                                <option value="C">4</option>
+                                <option value="D">3</option>
+                                <option value="E">2</option>                                 
+                            </select>
+                        <input id="studiepoeng_28" class="input-felt" type="number">
+                    </li>
+                    <li>
+                        <select id="karakter_29" class="input-felt" type="">
+                                <option value="-" selected="selected"><em>Bokstaver</em></option>
+                                <option value="A">A</option>
+                                <option value="B">B</option>
+                                <option value="C">C</option>
+                                <option value="D">D</option>
+                                <option value="E">E</option>                                 
+                            </select>
+                        <select id="karakter_0_29" class="input-felt" type="">
+                                <option value="-" selected="selected"><em>Desimal</em></option>
+                                <option value="A">1,0-2,2</option>
+                                <option value="B">2,3-2,5</option>
+                                <option value="C">2,6-2,7</option>
+                                <option value="D">2,8-3,0</option>
+                                <option value="E">3,1-4,0</option>                                 
+                            </select>
+                        <select id="karakter_0_1_29" class="input-felt" type="">
+                                <option value="-" selected="selected"><em>Oldschool</em></option>
+                                <option value="A">S</option>
+                                <option value="B">M</option>
+                                <option value="C">G</option>
+                                <option value="D">Ng</option>
+                                <option value="E">Lg</option>                                 
+                            </select>
+                        <select id="karakter_2_29" class="input-felt" type="">
+                                <option value="-" selected="selected"><em>tall</em></option>
+                                <option value="A">6</option>
+                                <option value="B">5</option>
+                                <option value="C">4</option>
+                                <option value="D">3</option>
+                                <option value="E">2</option>                                 
+                            </select>
+                        <input id="studiepoeng_29" class="input-felt" type="number">
+                    </li>
+
+                </ol>
+                <!--slutt input-liste-->
             </div>
-                <!--Slutt kalkulator-hel-->
+            <!--slutt input-gruppe-->
+        </div>
+        <!--Slutt kalkulator-hel-->
+    </div>
+
+    <div class="knapper">
+        <button class="knapp" id="regn-ut" onclick="regnUt()">Regn ut</button>
+        <button class="knapp" id="slett-alle" onclick="window.location.reload();">Slett</button>
+    </div>
+
+    <div class="resultat-boks">
+        <h2 class="resultat-overskrift">Resultat:</h2>
+
+        <div class="resultat-tekst">
+            <p>Formel: karakterverdi * SP / sum SP</p>
+            <p>Samlede studiepoeng:</p>
+            <p id="Samlede-studiepoeng">0</p>
+            <p>Utregnet resultat:</p>
+            <p id="Utregnet-resultat">0</p>
+
         </div>
 
-        <div class="knapper">
-            <button class="knapp" id="regn-ut" onclick="regnUt()">Regn ut</button>
-            <button class="knapp" id="slett-alle" onclick="window.location.reload();">Slett</button>
-        </div>
+        <!--slutt resultat-boks-->
+    </div>
 
-        <div class="resultat-boks">
-            <h2 class="resultat-overskrift">Resultat:</h2>
-
-            <div class="resultat-tekst">
-                <p>Formel: karakterverdi * SP / sum SP</p>
-                <p>Samlede studiepoeng:</p>
-                <p id="Samlede-studiepoeng">0</p>
-                <p>Utregnet resultat:</p>
-                <p id="Utregnet-resultat">0</p>
-
-            </div>
-
-        <!--slutt resultat-boks-->    
-        </div>
-
-        <script>
-            src="../js/be_script.js"
-        </script>
+    <script>
+        src = "../js/be_script.js"
+    </script>
     <!--Slutt body-->
-    </body>
+</body>
 
-    <footer>
-        <script src="../js/be_script.js"></script>
-        <p>Copyright by: <em>Asgeir Bjørgen Huskebakk © 2022</em></p>
+<footer>
+    <script src="../js/be_script.js"></script>
+    <p>Copyright by: <em>Asgeir Bjørgen Huskebakk © 2022</em></p>
 
     <!--slutt footer-->
-    </footer>
+</footer>
 
 </html>
