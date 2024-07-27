@@ -23,3 +23,5 @@ The calculator makes it easier for people who work in admissions departments to 
 Open index.html to start the program.
 
 You're welcome!
+
+ <a href="https://www.polarcode.solutions" target="_blank"> Visit PolarCode Solutions! </a>
